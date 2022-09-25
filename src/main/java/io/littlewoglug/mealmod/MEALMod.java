@@ -25,11 +25,11 @@ public class MEALMod {
 
     public MEALMod() {
 
-        // Register the setup method for modloading
+        // Register the setup method for mod loading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
+        // Register the enqueueIMC method for mod loading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
+        // Register the processIMC method for mod loading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
 
         // Register ourselves for server and other game events we are interested in
@@ -38,8 +38,8 @@ public class MEALMod {
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
+        // some pre-init code
+        LOGGER.info("HELLO FROM PRE-INIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 
